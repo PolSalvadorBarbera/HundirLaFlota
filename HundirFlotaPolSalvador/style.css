@@ -1,0 +1,32 @@
+.boards-container {
+    display: flex;
+    gap: 20px;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    gap: 2px;
+}
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #000;
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+.ship {
+    background-color: #666;
+}
+.opponent .ship {
+    background-color: transparent; /* Ocultar barcos del rival */
+}
+.selected-ship {
+    background-color: #4CAF50;
+}
+.error {
+    border: 2px solid #ff0000;
+}
+.disabled { /* Clase para deshabilitar interacción */
+    pointer-events: none;
+    opacity: 0.6;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hundir la flota</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="ships-panel">
+        <h3>Tus barcos:</h3>
+        <div id="ships-list"></div>
+    </div>
+    <div class="boards-container">
+        <div>
+            <h3>Tu tablero</h3>
+            <div id="player-board" class="board"></div>
+        </div>
+        <div>
+            <h3>Tablero rival</h3>
+            <div id="opponent-board" class="board opponent"></div>
+        </div>
+    </div>
+    <div id="messages"></div>
+
+
+<script src="script.js"></script>
+<!-- 
+Es mejor ejecutar el archivo JavaScript al final, asegura que todo el contenido HTML se haya cargado completamente antes de que el script se ejecute. 
+Evita errores relacionados con la manipulación de elementos del DOM que aún no se han cargado y mejora el rendimiento de la página
+-->
+</body>
+</html>
